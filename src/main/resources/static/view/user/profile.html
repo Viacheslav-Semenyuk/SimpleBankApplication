@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/card.css">
+    <link rel="stylesheet" type="text/css" href="../../css/profile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body onload="getProfile()">
+<div class="sc-bdVaJa eZuRng btn-profile">
+    <a href="/view/user/transfer.html" class="sc-bwzfXH iLdcHy">Card
+        <div class="sc-bxivhb cgLzEY"></div>
+    </a>
+</div>
+<div class="sc-bdVaJa eZuRng btn-logout">
+    <a href="/logout" class="sc-bwzfXH iLdcHy">Logout
+        <div class="sc-bxivhb cgLzEY"></div>
+    </a>
+</div>
+<div class="root_2L2ydAMddU">
+    <section class="content_3MDkKI6-g6">
+        <div class="root_3iYuOUKNHe">
+            <div class="sc-kcDeIU bNfHtp">
+                <div class="sc-BngTV iLUYZV">
+                    <a href="/view/user/profile.html" class="sc-exkUMo cQcsaE">Profile</a>
+                    <a href="/view/user/security.html" class="sc-exkUMo my-cQcsaE">Security</a>
+                </div>
+                <div class="sc-drMfKT jPVKVi"></div>
+                <div class="tabContent_I6UV1ooVmK">
+                    <div>
+                        <form>
+                            <section class="section_30XCmEvNvv">
+                                <div>
+                                    <div class="sc-iqzUVk cpySmw"><h3>General information</h3></div>
+                                    <div class="content_2StU7mc7cW">
+                                        <div class="photo_ms012aWVMU">
+                                            <div class="marginBottom2_2x0Tx3S6d6 textCenter_nDBAewjIXE"></div>
+                                            <div>
+                                                <div class="imgWrapper_xhvLcufqFf"><img
+                                                        src="/img/default.png"
+                                                        width="216" height="216" class="img_1SBsSJil20">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personal_2VzSf2BCy8">
+                                            <div class="sc-iqzUVk cpySmw">
+                                                <div class="sc-hmXxxW jBCUyy">
+
+                                                </div>
+                                            </div>
+                                            <div class="table_HpsCPOOQy9">
+                                                <table class="sc-ebFjAB dupTEw">
+                                                    <tbody class="sc-kaNhvL cmUSnb">
+                                                    <tr class="sc-LKuAh hLmApB">
+                                                        <td class="sc-iBEsjs jtbvMP label_MDRoNetFI1">Last name:</td>
+                                                        <td class="sc-iBEsjs jtbvMP" id="last_name">
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="sc-LKuAh hLmApB">
+                                                        <td class="sc-iBEsjs jtbvMP label_MDRoNetFI1">First name:</td>
+                                                        <td class="sc-iBEsjs jtbvMP" id="first_name">
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="sc-LKuAh hLmApB">
+                                                        <td class="sc-iBEsjs jtbvMP label_MDRoNetFI1">Date of birth:
+                                                        </td>
+                                                        <td class="sc-iBEsjs jtbvMP" id="birthday">
+
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="section_30XCmEvNvv">
+                                <section>
+                                    <div class="marginBottom1_CdN_e33e4s"><h3>Contact details</h3></div>
+                                    <div class="marginBottom2_2x0Tx3S6d6">
+                                        <div id="div-username" class="root_3YzfqAz2qi">
+                                            <div class="type_2tESioPuNh">Username</div>
+                                            <div class="value_3eWFJMLbP0 finance_18AEuFrCLU" id="username">
+
+                                            </div>
+                                            <div class="controls_3FtHlcyioc">
+                                                <div class="sc-bdVaJa eZuRng">
+                                                    <button type="button" class="sc-bwzfXH iLdcHy"
+                                                            onclick="usernameEdit()">Edit
+                                                        <div class="sc-bxivhb cgLzEY"></div>
+                                                    </button>
+                                                </div>
+                                                </a></div>
+                                        </div>
+                                        <div id="div-email" class="root_3YzfqAz2qi">
+                                            <div class="type_2tESioPuNh">Email</div>
+                                            <div class="value_3eWFJMLbP0 finance_18AEuFrCLU" id="email">
+
+                                            </div>
+                                            <div class="controls_3FtHlcyioc">
+                                                <div class="sc-bdVaJa eZuRng" >
+                                                    <button type="button" class="sc-bwzfXH iLdcHy"
+                                                            onclick="emailEdit()">Edit
+                                                        <div class="sc-bxivhb cgLzEY"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <section class="section_30XCmEvNvv"></section>
+                            <div class="div-footer">
+                                <div class="sc-bdVaJa gOXKET">
+                                    <a href="/logout" class="sc-bwzfXH fRGrjF" onclick="putProfile()">Save
+                                        <div class="sc-bxivhb cgLzEY"></div>
+                                    </a>
+                                </div>
+                                <div class="btn-user dropleft">
+                                    <button type="button"
+                                            class="btn btn-card dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu" style="padding: unset;">
+                                        <a id="delete_user_id"
+                                           class="my-dropdown-item my-title"
+                                           onclick="deleteUser()"
+                                           href="/logout">Delete User</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../../js/fetch_profile.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

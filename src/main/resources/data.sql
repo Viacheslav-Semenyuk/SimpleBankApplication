@@ -1,0 +1,8 @@
+-- INSERT INTO roles (id, name) VALUES (1, 'ROLE_ADMIN');
+-- INSERT INTO roles (id, name) VALUES (2, 'ROLE_USER');
+--
+-- INSERT INTO users (id, username, password, email) VALUES (1, 'admin', '$2y$12$f0sv2FRXsFs9kI.rk0K0hepKf3Fm37sXG3uXZC99XGnnRkf.sI4x6 ', 'admin@gmail.com');
+-- INSERT INTO users (id, username, password, email) VALUES (2, 'user', '$2y$12$f0sv2FRXsFs9kI.rk0K0hepKf3Fm37sXG3uXZC99XGnnRkf.sI4x6 ', 'user@gmail.com');
+--
+-- INSERT INTO users_roles (user_id, role_id) VALUES (1, 1);
+-- INSERT INTO users_roles (user_id, role_id) VALUES (2, 2);

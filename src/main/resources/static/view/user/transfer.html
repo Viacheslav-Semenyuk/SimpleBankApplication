@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/profile.css">
+    <link rel="stylesheet" type="text/css" href="../../css/card.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <meta charset="UTF-8">
+    <title>Transfer</title>
+</head>
+<body onload="getCard()">
+<div class="sc-bdVaJa eZuRng btn-profile">
+    <a href="/view/user/profile.html" class="sc-bwzfXH iLdcHy">Profile
+        <div class="sc-bxivhb cgLzEY"></div>
+    </a>
+</div>
+<div class="sc-bdVaJa eZuRng btn-logout">
+    <a href="/logout" class="sc-bwzfXH iLdcHy">Logout
+        <div class="sc-bxivhb cgLzEY"></div>
+    </a>
+</div>
+<div class="container">
+    <div class="row my-row">
+        <div class="col">
+            <div class="serviceBox">
+                <div class="service-icon">
+                    <i class="fa fa-id-card-o"></i>
+                </div>
+                <h3 class="title">Cards</h3>
+                <div class="statements-account-block">
+                    <div id="card" class="dashboard-item-body">
+                        <!--    card info-->
+
+                    </div>
+                    <div id="user_id">
+                        <a onclick="addCard()" href="#"
+                           class="btn btn-black">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="serviceBox">
+                <div class="service-icon">
+                    <i class="fa fa-money"></i>
+                </div>
+                <a class="my-transfer-title" href="transfer.html">Transfer</a>
+                <a class="title slash" style="">|</a>
+                <a class="my-replenish-title" href="replenish.html">Replenish</a>
+                <div>
+                    <div class="container">
+                        <form class="container" method="post">
+                            <hr/>
+                            <div class="fromCard">
+                                <select name="transfer_name" class="btn btn-black" id="fromCard">
+                                </select>
+                            </div>
+                            <div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="my-input-group-text ">to Card</span>
+                                    </div>
+                                    <div><input type="text" class="form-control" id="toCard" name="toCard"
+                                                placeholder="Enter to card" required></div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="my-input-group-text count" id="count">Count</span>
+                                    </div>
+                                    <div><input type="text" class="form-control" id="amount" name="amount"
+                                                placeholder="Enter amount" required></div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div><a onclick="transfer()" href="/view/user/transfer.html"
+                                    class="btn btn-black">Transfer</a></div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/fetch_card.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

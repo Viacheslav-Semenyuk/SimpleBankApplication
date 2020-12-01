@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/profile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body onload="getProfile()">
+<div class="sc-bdVaJa eZuRng btn-profile">
+    <a href="/view/user/transfer.html" class="sc-bwzfXH iLdcHy">Card
+        <div class="sc-bxivhb cgLzEY"></div>
+    </a>
+</div>
+<div class="sc-bdVaJa eZuRng btn-logout">
+    <a href="/logout" class="sc-bwzfXH iLdcHy">Logout
+        <div class="sc-bxivhb cgLzEY"></div>
+    </a>
+</div>
+<div class="root_2L2ydAMddU">
+    <section class="content_3MDkKI6-g6">
+        <div class="root_3iYuOUKNHe">
+            <div class="sc-kcDeIU bNfHtp">
+                <div class="sc-BngTV iLUYZV">
+                    <a href="/view/user/profile.html" class="sc-exkUMo my-cQcsaE">Profile</a>
+                    <a href="/view/user/security.html" class="sc-exkUMo cQcsaE">Security</a>
+                </div>
+                <div class="sc-drMfKT jPVKVi"></div>
+                <div class="tabContent_I6UV1ooVmK">
+                    <div>
+                        <form>
+                            <section class="section_30XCmEvNvv">
+                                <div>
+                                    <div class="form-group">
+                                        <label>Current Password</label>
+                                        <input type="password" id="currentPassword" name="currentPassword"
+                                               class="form-control" placeholder="Enter current password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>New Password</label>
+                                        <input type="password" id="newPassword" name="newPassword" class="form-control"
+                                               placeholder="Enter new password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Confirm Password</label>
+                                        <input type="password" id="confirmNewPassword" name="confirmNewPassword"
+                                               class="form-control"
+                                               onChange="checkPasswordMatch()"
+                                               placeholder="Confirm new password">
+                                    </div>
+                                </div>
+                                <div  id="divCheckPasswordMatch">
+                                </div>
+                            </section>
+                            <section class="section_30XCmEvNvv"></section>
+                            <div>
+                                <div class="sc-bdVaJa gOXKET">
+                                    <a href="#" onclick="putPassword()" class="sc-bwzfXH fRGrjF">Save
+                                        <div class="sc-bxivhb cgLzEY"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../../js/fetch_security.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
